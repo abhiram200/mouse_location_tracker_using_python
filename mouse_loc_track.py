@@ -21,7 +21,9 @@ def start_timer():
 
 count = 0
 
-while count < 64:
+loc = pyautogui.prompt("How many mouse locations you want to fetch?")
+
+while count < loc:
     start_timer()
     x, y = pyautogui.position()
     print("Mouse is at (x, y): ({}, {})".format(x, y))
